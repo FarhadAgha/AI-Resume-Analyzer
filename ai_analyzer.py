@@ -22,7 +22,7 @@ Resume:
 {resume_text}"""
 
     response = client.chat.completions.create(
-        model="llama-3.3-70b-versatile",
+        model="model="llama3-70b-8192",
         messages=[{"role": "user", "content": prompt}],
         max_tokens=1024
     )
